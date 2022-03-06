@@ -13,26 +13,25 @@ void main ()
 	 	 a++;
 		}
     }
- 	 while (a == 2)
+ 	if(a == 2)
     	{
-      	printf("El numero es primo\n");
-     	np=true;
-      	break;
+    		printf("El numero es primo\n");
+    		np=true;
+   		}
+ 	else if(a>2)
+    	{
+      		printf("El numero no es primo\n");
+      		np=false;
     	}
-  if(a>2)
-    {
-      printf("El numero no es primo\n");
-      np=false;
-    }
-  if(np==true)
-    {
-    	printf("np true\n");
-    }
+  	if(np==true)
+    	{
+    		printf("np true\n");
+   		}
     else
-    {
-    	printf("np false\n");
-    }
-    	while(np==true)
+    	{
+    		printf("np false\n");
+    	}
+    while(np==true)
     	{
     		n1--;     
     		for (i2 = 1; i2 <= n1; i2++)
@@ -42,16 +41,16 @@ void main ()
     					a2++;
     		   		}   		 
     			}  
-    		if (a2 == 2 && n1 > 0)
+    		if (a2 == 2)
     			{    			  
     				printf ("%i es primo\n", n1);
         		}		      
-    		    	else if (a2 > 2 && n1 > 0)
+    		else if (a2 > 2)
     			{ 
     			printf ("%i no es primo \n", n1);
     			} 
     			a2 = 0;  
-    			if (n1 < 0)
+    		if (n1 < 0)
     			{
     	  			break;
     	  		}

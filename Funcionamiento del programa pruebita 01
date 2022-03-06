@@ -1,0 +1,64 @@
+Funcionamiento del codigo "Pruebita 01"
+
+Este codigo nos pedira que introduzcamos un numero. Si este numero es par el programa acabará, de lo contrario si es primo el programa empezará a comprobar uno a uno si los numeros anteriores al introducido son primos o no.
+	Ej:
+		Introducimos el numero 7
+		Por pantalla nos indicará lo siguiente
+			Introduce un numero
+			7
+			El numero es primo
+			np true
+			6 no es primo
+			5 es primo
+			4 no es primo
+			3 es primo
+			2 es primo
+
+2 primeras lineas
+	Inclusión de librerias, una de ellas "stdbool",
+	para hacer operaciones con bool's.
+Lineas de 4 a 8
+	Inicio del main y declaración de las variables a utilizar
+		dentro de int
+			n1 el numero que vamos a introducir
+			i e i2 para los bucles for que vamos a utilizar
+			a y a2 son variables de control
+		dentro de bool
+			np abreviatura de numero primo es un tipo bool
+			que lo utilizaremos para un para un while mas adelante
+		printf y scanf
+			para indicarnos que tipo de valor debemos de introducir por teclado
+lineas 9 a 15
+	Primer bucle for para averiguar si el numero introducido es primo o no.
+Lineas 16 a 25 y 26 a 33
+	16 a 25:
+		Dos condicionales if y else if
+			El primero:
+				Si la variable a es igual a 2 nos idica que el numero que hemos introducio es primo
+				y declara al bool np como verdadero
+			El segundo:
+				Si el anterior condicional no es verdadero y la varibale a(que indica el numero de divisores que tiene el numero que hemos escogido) es mayor a 2 nos indica que el numero no es primo y declara al bool np como dalso
+	26 a 33:
+		Dos condicionales if y else
+			El primer:
+				Si el bool np es verdadero imprime que el valor del bool es true (solo lo metí para confirmar que la variable funcionaba correctamente)
+			El segundo:
+				Si el condicional anterior es falso imprime que el bool np es false
+lineas 34 a 57:
+	Bucle While
+		Linea 36:
+			La variable n1 irá disminuyendo cada vez que se repita el bucle
+		Lineas 37 a 43
+			Parecido al primer bucle for:
+				Sirve para comprobar en este caso si el valor de n1-- es primo o no
+		Lineas 44 a 51
+			dos condicionales:
+				El primero:
+					Comprueba si la variable de control a2 es igual a 2 en este caso imprime que n1 es primo
+				El segundo:
+					Si el condicional anterior es falso y mayor que 2 imprime que n1 no es primo
+		linea  52:
+			Vuelve a poner el valor de a2 a 0
+		Lineas 53 a 56:
+			Si el valor de n1 es menor que 0 cierra el bucle while y acaba el programa tras esto
+			
